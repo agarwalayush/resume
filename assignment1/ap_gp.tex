@@ -1,0 +1,42 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
+
+%opening
+\title{Arithematic and Geometric Sequences}
+\author{Ayush Agarwal}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%-------------Arithematic Progression--------------%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Arithematic Progression}
+\subsection*{Defination}
+An arithmetic progression (AP) is a sequence of numbers such that the difference between the consecutive terms is constant. 
+For instance, the sequence $5, 7, 9, 11, 13, 15 … $is an arithmetic progression with common difference of 2.\\
+
+\subsection*{Calculation}
+If the initial term of an arithmetic progression is $a_1$ and the common difference of successive members is d
+, then the nth term of the sequence ($a_n$) is given by:\\
+\vspace{2mm}
+ $$a_n = a_1 + (n - 1)d,$$\\
+ or, in general
+ $$a_n = a_m + (n - m)d,$$\\
+To drive the formula for sum of n terms($S_n$) of an A.P..\\
+Let \\
+\begin{eqnarray*}
+S_n&=& a + (a + d) + (a + 2d) + ..... (a + (n - 1)d)\\
+S_n&=&(a_n - (n - 1)d) + (a_n - (n - 2)d) + ..... + a_n - d + a_n\\
+\end{eqnarray*}
+\textrm Adding Both sides of the equation, we get\\
+\begin{eqnarray*}
+2S_n&=& n(a + a_n)\\
+2S_n&=& n(a + a + (n - 1)d) \\
+2S_n&=& n(2a + (n - 1)d) \\
+S_n&=& \frac{n}{2}(2a + (n - 1)d) \\
+\end{eqnarray*} 
+\end{document}
