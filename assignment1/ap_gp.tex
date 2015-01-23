@@ -14,9 +14,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%-------------Arithematic Progression--------------%%%%%%%%%%%%%%%%%%%%%
 
-\section*{Arithematic Progression}
+\section{Arithematic Progression}
 \subsection*{Defination}
-An arithmetic progression (AP) is a sequence of numbers such that the difference between the consecutive terms is constant. 
+An arithmetic progression (A.P.) is a sequence of numbers such that the difference between the consecutive terms is constant. 
 For instance, the sequence $5, 7, 9, 11, 13, 15 … $is an arithmetic progression with common difference of 2.\\
 
 \subsection*{Calculation}
@@ -26,7 +26,7 @@ If the initial term of an arithmetic progression is $a_1$ and the common differe
  $$a_n = a_1 + (n - 1)d,$$\\
  or, in general
  $$a_n = a_m + (n - m)d,$$\\
-To drive the formula for sum of n terms($S_n$) of an A.P..\\
+To drive the formula for sum of n terms($S_n$) of an A.P.\\
 Let \\
 \begin{eqnarray*}
 S_n&=& a + (a + d) + (a + 2d) + ..... (a + (n - 1)d)\\
@@ -37,6 +37,35 @@ S_n&=&(a_n - (n - 1)d) + (a_n - (n - 2)d) + ..... + a_n - d + a_n\\
 2S_n&=& n(a + a_n)\\
 2S_n&=& n(a + a + (n - 1)d) \\
 2S_n&=& n(2a + (n - 1)d) \\
-S_n&=& \frac{n}{2}(2a + (n - 1)d) \\
+S_n&=& \frac{n}{2}[2a + (n - 1)d] \\
 \end{eqnarray*} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%-------------Geometric Progression--------------%%%%%%%%%%%%%%%%%%%%%
+
+\section{Geometric Progression}
+\subsection*{Defination}
+A Geometric progression (GP) is a sequence of numbers such that the ratio between the consecutive terms is constant. 
+For instance, the sequence $2, 4, 8, 16, 32, 64 … $is an G.P. with common ratio of 2.\\
+A generalized G.P. with first term \emph{a} and common ratio \emph{r} can be shown as,
+$$a , ar ,  ar^2 ,  ar^3 ,  ar^4 , ....... , ar^{n-1}$$\\
+with $n_{th}$ term( $a^n$) being,
+$$a_n = ar^{n-1}$$\\
+
+\subsection*{Calculation}
+To drive the formula for sum of n terms($S_n$) of an G.P..\\
+Let \\
+\begin{align}
+S_n&= a + ar + ar^2 + ..... ar^{n-1} \\
+rS_n&=ar + ar^2 + ar^3 + ..... + ar^n 
+\end{align}
+
+$(1) - (2)$ , we get
+
+\begin{align*}
+S_n (1 - r) & = a - ar^n\\
+S_n & = a \frac{1 - r^n}{1 - r}
+\end{align*}
+
+
 \end{document}
