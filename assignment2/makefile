@@ -11,4 +11,5 @@ pdf:
 	pdflatex ap_gp.tex
 	pdflatex ap_gp.tex
 
-
+clean:
+	rm *.aux *.log *.dvi *.bbl *.blg 
