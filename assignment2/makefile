@@ -1,4 +1,4 @@
-all: dvi 
+all: dvi pdf
 
 dvi:
 	latex ap_gp.tex
