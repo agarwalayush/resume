@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%% Tikz and pgf %%%%%%%%%%%%%%%%%%%%%5
+\usepackage{tikz}
+\usepackage{pgfmath}
+\usetikzlibrary{positioning, arrows,automata}
+\usetikzlibrary{shapes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{dot2texi}
+
+\begin{document}
+
+\section{Patterson Graph}
+
+\begin{tikzpicture}[every state/.style={draw=black!50,very thick,fill=blue!20}]]
+  \begin{dot2tex}[styleonly,codeonly,dot, tikzedgelabels]
+    digraph G {
+      node[style="state"];
+      edge[lblstyle="auto", dir=none];      
+a->b;
+b->c;
+c->d;
+d->e;
+e->a;
+b->g;
+f->h;
+h->j;
+j->g;
+g->i;
+f->i;
+a->f;
+c->h;
+d->i;
+e->j;
+    }
+  \end{dot2tex}
+\end{tikzpicture}
+
+
+\end{document}
