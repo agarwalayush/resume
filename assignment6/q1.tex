@@ -1,0 +1,20 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{filecontents,pgfplots}
+\begin{document}
+\pgfplotstableread{data}{\data}
+\begin{tikzpicture}[]
+\begin{axis}[title=Diffrent Probability Distributions,
+	xlabel={$x$},
+	xmax=50,
+	ylabel={$F(x)$},
+	ymax=0.2,
+	grid style=dashed
+	]
+\addplot [dashed,red,thick] table [x={s}, y={b}] {\data};
+\addplot [dashed,orange,thick] table [x={s}, y={p}] {\data};
+\addplot [dashed,green,thick] table [x={s}, y={g}] {\data};
+\legend{$Binomial$,$Poisson$,$Gaussian$}
+\end{axis}
+\end{tikzpicture}
+\end{document}
