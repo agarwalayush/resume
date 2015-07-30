@@ -1,8 +1,0 @@
-#!/bin/bash
-while :
-do
-    date=$(date +"%T")
-    clear
-    banner $date
-    sleep 1
-done
